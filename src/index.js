@@ -10,11 +10,13 @@ const stores = {
   topics,
 }
 
+const TopicsContext = React.createContext(topics)
+
 ReactDOM.render(
   <Provider {...stores}>
-    <React.StrictMode>
+    <TopicsContext.Provider value={topics}>
       <App />
-    </React.StrictMode>
+    </TopicsContext.Provider>
   </Provider>,
   document.getElementById('root')
 )

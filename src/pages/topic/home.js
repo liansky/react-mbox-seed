@@ -1,9 +1,8 @@
 import React from 'react'
-import { Link, NavLink, withRouter } from 'react-router-dom'
 import { observer, inject } from 'mobx-react'
+import './style/index.css'
 
 @inject('topics')
-@withRouter
 @observer
 export default class Home extends React.Component {
   plus = () => {
@@ -11,7 +10,7 @@ export default class Home extends React.Component {
   }
 
   componentDidMount() {
-    console.log(this.props)
+    console.log(this)
   }
 
   render() {
@@ -19,23 +18,11 @@ export default class Home extends React.Component {
 
     return (
       <div>
-        <p>
+        <h2>mbox-class</h2>
+        <p className="test">
           {name}, {age}
         </p>
         <button onClick={this.plus}>点我</button>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <NavLink to="/about" activeClassName="test">
-              About
-            </NavLink>
-          </li>
-          <li>
-            <Link to="/topics">Topics</Link>
-          </li>
-        </ul>
       </div>
     )
   }
