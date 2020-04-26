@@ -10,13 +10,9 @@ const stores = {
   topics,
 }
 
-const TopicsContext = React.createContext(topics)
-
 ReactDOM.render(
   <Provider {...stores}>
-    <TopicsContext.Provider value={topics}>
-      <App />
-    </TopicsContext.Provider>
+    <App />
   </Provider>,
   document.getElementById('root')
 )

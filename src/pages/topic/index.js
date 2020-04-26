@@ -21,13 +21,16 @@ export default class Index extends React.Component {
         </h1>
         <ul>
           <li>
-            <Link to="/topics">router-route</Link>
+            <Link to="/route">router-route</Link>
           </li>
           <li>
-            <Link to="/home">mbox-class</Link>
+            <Link to="/myContext">myContext</Link>
           </li>
           <li>
-            <Link to="/about">mbox-useLocalStore</Link>
+            <Link to="/mboxClass">mbox-class</Link>
+          </li>
+          <li>
+            <Link to="/useLocalStore">mbox-useLocalStore</Link>
           </li>
         </ul>
       </div>

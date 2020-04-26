@@ -10,8 +10,8 @@ export default observer(() => {
   })
   return (
     <div>
-      <h1>mobx-useLocalStore</h1>
-      <h2>{todo.name}</h2>
+      <h2>mobx-useLocalStore</h2>
+      <p>{todo.name}</p>
       <button
         onClick={() => {
           todo.name = todo.flag ? '你好' : 'hello'

@@ -1,6 +1,6 @@
 import React from 'react'
 import { observer, inject } from 'mobx-react'
-import './style/index.css'
+import styles from './style/index.module.scss'
 
 @inject('topics')
 @observer
@@ -9,20 +9,18 @@ export default class Home extends React.Component {
     this.props.topics.plus()
   }
 
-  componentDidMount() {
-    console.log(this)
-  }
-
   render() {
     const { name, age } = this.props.topics
 
     return (
       <div>
-        <h2>mbox-class</h2>
-        <p className="test">
+        <h2 className="title">mbox-class</h2>
+        <p className={styles.test}>
           {name}, {age}
         </p>
-        <button onClick={this.plus}>点我</button>
+        <button className={styles.btn} onClick={this.plus}>
+          点我
+        </button>
       </div>
     )
   }
