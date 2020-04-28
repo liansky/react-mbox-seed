@@ -27,6 +27,9 @@ export default class Index extends React.Component {
             <Link to="/myContext">myContext</Link>
           </li>
           <li>
+            <Link to="/myHooks">hooks</Link>
+          </li>
+          <li>
             <Link to="/mboxClass">mbox-class</Link>
           </li>
           <li>

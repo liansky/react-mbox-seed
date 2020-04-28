@@ -7,6 +7,7 @@ import mboxClass from './pages/topic/class'
 import useLocalStore from './pages/topic/use-local-store'
 import route from './pages/topic/route'
 import myContext from './pages/topic/context/index'
+import myHooks from './pages/topic/hooks/index'
 
 const App = () => (
   <Router>
@@ -15,6 +16,7 @@ const App = () => (
     <Route path="/useLocalStore" component={useLocalStore} />
     <Route path="/route" component={route} />
     <Route path="/myContext" component={myContext} />
+    <Route path="/myHooks" component={myHooks} />
   </Router>
 )
 export default App
