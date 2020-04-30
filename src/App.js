@@ -10,7 +10,7 @@ import myContext from './pages/topic/context/index'
 import myHooks from './pages/topic/hooks/index'
 
 //todo
-import todo from './pages/todo/index'
+import todo from './pages/todos/index'
 
 const App = () => (
   <Router>
